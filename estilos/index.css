@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+.body__bg{
+    background-image: url();
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+.cabecera{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    background: linear-gradient(rgb(170, 170, 170), rgb(220, 220, 220));
+    border-radius: 0 0 25% 25%;;
+}
+.cabecera__titulos{
+    border: 1px solid black;
+    border-radius: 0 0 25% 25%;
+}
+.cabecera__titulos--h1{
+    text-align: center;
+    font-size: 5em;
+    font-family: "Akaya Kanadaka";
+}
+.cabecera__titulos--h2{
+    text-align: center;
+    font-size: 3em;
+    font-family: "Akaya Telivigala";
+}
+.menu{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 15vw;
+    background:linear-gradient(#ee99cc, #ffccff);
+    border-radius: 0 0 25% 0;
+    z-index: 100;
+    border: 1px solid #ddaadd;
+}
+.menu__lista--li{
+    text-align: center;
+    font-size: 1.3em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    z-index: 0;
+    font-family: "Stick";
+}
+.menu__lista--li:hover{
+    background: #ee7799;
+}
+.menu__lista--pedidos-consultas:hover{
+    background: #ee7799;
+    width: 99%;
+    border-radius: 0 0 25% 0 / 0 0 100% 0;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: inherit;
+}
+.separador{
+    position: absolute;
+    left: 20vw;
+    top: 11.5vw;
+}
+.separador__izquierda, .separador__centro, .separador__derecha{
+    display: inline-block;
+    border-radius: 50%;
+    background:linear-gradient(rgb(255, 150, 175),rgb(255, 175, 200));
+    border: 1px solid #ddaadd;
+}
+.separador__izquierda{
+    width: 35.5vw;
+    height: 2.5vw;
+    margin-right: 2vw;
+    margin-bottom: 1.25vw;
+}
+.separador__centro{
+    width: 5vw;
+    height: 5vw;
+}
+.separador__derecha{
+    width: 35.5vw;
+    height: 2.5vw;
+    margin-left: 2vw;
+    margin-bottom: 1.25vw;
+}
