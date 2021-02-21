@@ -1,42 +1,58 @@
 *{
     margin: 0;
     padding: 0;
-    font-size: 1vw;
+    font-size: 10px;
     box-sizing: border-box;
 }
-.body__bg{
-    background-image: url();
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+body{
+    max-width: 100vw;
+    max-height: 100vh;
 }
 .cabecera{
-    display: inline-block;
     position: absolute;
-    right: 0;
-    width: 80vw;
+    right: 1%;
+    width: 75%;
     background: linear-gradient(rgb(170, 170, 170), rgb(220, 220, 220));
     border-radius: 0 0 25% 25%;;
 }
 .cabecera__titulos{
-    border: 1px solid black;
+    border: 1px solid none;
     border-radius: 0 0 25% 25%;
 }
 .cabecera__titulos--h1{
     text-align: center;
-    font-size: 5em;
-    font-family: "Akaya Kanadaka";
+    font-family:'Libre Baskerville';
+    line-height: 1;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight:bolder;
 }
-.cabecera__titulos--h2{
+#cabecera__h1--span1{
+    position:relative;
+    display:inline-block;
+    font-size: 5em;
+    transform: scale(.7,1.1);
+    word-spacing: 0px;
+    text-shadow:0px 0px 1px black;
+}
+#cabecera__h1--span2{
+    position:relative;
+    display:inline-block;
+    font-size:5em;
+    transform: scale(.5,1.1);
+    word-spacing: 0px;
+    text-shadow:0px 0px 1px black;
+}
+/*.cabecera__titulos--h2{
     text-align: center;
     font-size: 3em;
     font-family: "Akaya Telivigala";
-}
+}*/
 .menu{
     display: inline-block;
     position: absolute;
     left: 0;
-    width: 15vw;
+    width: 20%;
     background:linear-gradient(#ee99cc, #ffccff);
     border-radius: 0 0 25% 0;
     z-index: 100;
@@ -53,9 +69,11 @@
 .menu__lista--li:hover{
     background: #ee7799;
 }
+nav ul li a:hover{
+    font-size: 1.2em;
+}
 .menu__lista--pedidos-consultas:hover{
     background: #ee7799;
-    width: 99%;
     border-radius: 0 0 25% 0 / 0 0 100% 0;
 }
 a{
@@ -64,7 +82,7 @@ a{
 a:visited{
     color: inherit;
 }
-.separador{
+/*.separador{
     position: absolute;
     left: 20vw;
     top: 11.5vw;
@@ -90,4 +108,4 @@ a:visited{
     height: 2.5vw;
     margin-left: 2vw;
     margin-bottom: 1.25vw;
-}
+}*/
